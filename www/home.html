@@ -1,0 +1,36 @@
+<ons-page>
+    <ons-toolbar>
+        <div class="center">ホーム</div>
+    </ons-toolbar>
+
+    <div style="text-align: center">
+        <br>
+        <ons-button
+            onclick="myNavigator.pushPage('page2.html')">
+            Push Page 2
+        </ons-button>
+    </div>
+    <div ng-controller="HomeCtrl">
+        <ons-row>
+            <ons-col>
+                <p class="pic_background">
+                    <img src="onsen_with_text.png" class="pic00">
+                    <span class="power">
+                        <ons-icon class="power_icon" icon="fa-power-off"></ons-icon>
+                        <ons-switch var="switch_state" ng-change="change_switch()" ng-model="switch_check"></ons-switch>
+                    </span>
+                </p>
+            </ons-col>
+            <ons-col>
+                <p class="pic_background">
+                    <img src="onsen_with_text.png" class="pic00">
+                    <span class="power">
+                        <ons-icon class="power_icon" icon="fa-power-off"></ons-icon>
+                        <ons-switch></ons-switch>
+                    </span>
+                </p>
+            </ons-col>
+        </ons-row>
+    </div>
+
+</ons-page>
